@@ -7,7 +7,7 @@ public class LoginService {
 
     public static void main(String[] args) {
         //API: secure(keystoreFilePath, keystorePassword, truststoreFilePath,truststorePassword);
-        secure("keystore/ecikeystore.p12", "123456", null, null);
+        secure("keystore/keyserverone.p12", "123456", null, null);
         port(getPort());
 
 

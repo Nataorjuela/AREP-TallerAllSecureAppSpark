@@ -18,25 +18,25 @@ public class SecureUrlReader {
 
     public static void main(String[]args) throws IOException, CertificateException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
 
-//        // Create a file and a password representation
-//        File trustStoreFile = new File("keystore/ecikeystore.p12");
-//        char[] trustStorePassword = "123456".toCharArray();
-//
-//        // Load the trust store, the default type is "pkcs12", the alternative is "jks"
-//        KeyStore trustStore = KeyStore.getInstance(KeyStore.getDefaultType());
-//        trustStore.load(new FileInputStream(trustStoreFile), trustStorePassword);
-//
-//        // Get the singleton instance of the TrustManagerFactory
-//        TrustManagerFactory tmf = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
-//
-//        // Init the TrustManagerFactory using the truststore object
-//        tmf.init(trustStore);
-//
-//        //Set the default global SSLContext so all the connections will use it
-//        SSLContext sslContext = SSLContext.getInstance("TLS");
-//        sslContext.init(null, tmf.getTrustManagers(), null);
-//        SSLContext.setDefault(sslContext);
-        // We can now read this URL
+        //Create a file and a password representation
+        File trustStoreFile = new File("keystore/ecikeystore.p12");
+        char[] trustStorePassword = "123456".toCharArray();
+
+        // Load the trust store, the default type is "pkcs12", the alternative is "jks"
+        KeyStore trustStore = KeyStore.getInstance(KeyStore.getDefaultType());
+        trustStore.load(new FileInputStream(trustStoreFile), trustStorePassword);
+
+        // Get the singleton instance of the TrustManagerFactory
+        TrustManagerFactory tmf = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
+
+        // Init the TrustManagerFactory using the truststore object
+        tmf.init(trustStore);
+
+        //Set the default global SSLContext so all the connections will use it
+        SSLContext sslContext = SSLContext.getInstance("TLS");
+        sslContext.init(null, tmf.getTrustManagers(), null);
+        SSLContext.setDefault(sslContext);
+         //We can now read this URL
         readURL("https://localhost:5000/hello");
         // This one can't be read because the Java default truststore has been
         // changed.
