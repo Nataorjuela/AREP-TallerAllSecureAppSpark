@@ -1,4 +1,4 @@
-package escuelaing.edu;
+package escuelaing.edu.taller;
 /**
  * Hello world!
  *

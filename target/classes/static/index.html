@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TareaArep</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form action="/hello">
+        <input type="text" id="user" name="input" placeholder="Ingresar Nombre">
+        <input type="text" id="password" name="input" placeholder="Ingresar Contraseña">
+        <input type="button" value="Ingresar" onClick="getSaludo()">
+    </form>
+<div id="getSaludo"></div>
+
+<script>
+            function getSaludo() {
+                let nameVar = document.getElementById("user").value;
+                let pwd = document.getElementById("password").value;
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("getSaludo").innerHTML =
+                    this.responseText;
+                }
+                xhttp.open("GET", "/saludo?name="+nameVar+"&pswd="+pwd);
+                xhttp.send();
+            }
+</script>
+
+
+</body>
+
+</html>

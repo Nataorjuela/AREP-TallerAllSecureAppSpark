@@ -1,4 +1,4 @@
-package escuelaing.edu;
+package escuelaing.edu.taller;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManagerFactory;
