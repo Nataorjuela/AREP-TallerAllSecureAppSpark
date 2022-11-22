@@ -12,7 +12,7 @@ Construir una aplicación web segura usando certificados digitales
 
 ## Arquitectura
 
-![image](https://github.com/Nataorjuela/AREP-TallerAllSecureAppSpark/blob/master/Images/arquitectura.jpg)
+![image](https://github.com/Nataorjuela/AREP-TallerAllSecureAppSpark/blob/master/images/arquitecturaTaller.png)
 
 ---
 
@@ -32,7 +32,7 @@ Desarrolle una aplicación Web segura con los siguientes requerimientos:
 
 ## Arquitectura
 
-![image](https://github.com/Nataorjuela/AREP-TallerAllSecureAppSpark/blob/master/Images/arquitectura.jpg)
+![image](https://github.com/Nataorjuela/AREP-TallerAllSecureAppSpark/blob/master/images/arquitectura.png)
 
 En esta arquitectura se manejan dos servidores los cuales estaran conectados entre si para darse respuesta de uno a otro, se utilizara Spark en ambos servicios, esta aplicación es segura y se manejaran certificados los cuales solo permitiran el acceso del puerto de ambos servidores.
 
