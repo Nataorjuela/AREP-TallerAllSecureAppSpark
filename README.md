@@ -38,4 +38,4 @@ En esta arquitectura se manejan dos servidores los cuales estaran conectados ent
 
 ## Video
 
-[TallerMicroservicios](https://www.youtube.com/watch?v=mwogMmYHCbE "TallerMircroservicios")
+[TallerArep](https://www.youtube.com/watch?v=cM_S2QvM0kw&t=2s"TallerArep")
